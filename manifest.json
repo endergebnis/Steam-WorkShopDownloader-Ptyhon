@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Steam Workshop Downloader",
+  "version": "1.5",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["http://localhost:5005/"],
+  "content_scripts": [
+    {
+      "matches": ["https://steamcommunity.com/sharedfiles/filedetails/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
